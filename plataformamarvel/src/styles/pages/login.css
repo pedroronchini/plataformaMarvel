@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+}
+
+.containerLogo {
+  width: 20%;
+}
+
+.containerLogin {
+  margin-left: 15px;
+  width: 60%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  color: #84848D;
+  font-size: 20px;
+}
+
+.input {
+  width: 45%;
+  height: 73px;
+  border-radius: 50px;
+  border-style: none;
+  padding: 15px;
+  margin: 10px;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.containerRadio {
+  padding: 10px;
+}
+
+.radio {
+  margin-right: 5px;
+}
+
+.textButtonPassword {
+  width: 16%;
+  color: #84848D;
+  border-bottom: 1px solid #FF0000;
+  margin: 1px 5px 15px 0;
+}
+
+.button {
+  width: 45%;
+  height: 65px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #FF0000;
+  border-style: none;
+  color: #FFFFFF;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.textButtonRegister {
+  color: #FF0000;
+}
+
+a {
+  text-decoration: none;
+}
