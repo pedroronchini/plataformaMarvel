@@ -1,0 +1,15 @@
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+img {
+  margin: 15px;
+}
+
+.arrow {
+  border-style: none;
+  background: none;
+}

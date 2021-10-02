@@ -1,0 +1,27 @@
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+img {
+  margin: 15px;
+}
+
+.arrow {
+  border-style: none;
+  background: none;
+}
+
+.dropDown {
+  width: 10%;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 60px;
+  background-color: #000000;
+  border: 1px solid #FF0000;
+  border-radius: 10px;
+  color: #FF0000;
+  padding: 10px;
+}

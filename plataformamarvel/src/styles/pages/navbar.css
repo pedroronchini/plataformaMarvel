@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 8px 15px rgba(255, 0, 0, 0.3);
+}
+
+.divLogo {
+  width: 60%;
+}
+
+.logo {
+  width: 10%;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
