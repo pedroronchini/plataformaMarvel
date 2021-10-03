@@ -7,4 +7,8 @@ export const Img = styled.img`
   top: 0;
   opacity: 0.3;
   z-index: 2;
+
+  @media screen and (max-width: 660px) {
+    width: 100%;
+  }
 `;

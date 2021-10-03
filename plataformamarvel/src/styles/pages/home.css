@@ -13,3 +13,10 @@ img {
   border-style: none;
   background: none;
 }
+
+@media screen and (max-width: 660px) {
+  .images {
+    display: flex;
+    flex-direction: column;
+  }
+}

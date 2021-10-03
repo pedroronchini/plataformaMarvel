@@ -25,3 +25,14 @@ img {
   color: #FF0000;
   padding: 10px;
 }
+
+@media screen and (max-width: 660px) {
+  .images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropDown {
+    width: 50%;
+  }
+}
