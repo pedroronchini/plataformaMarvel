@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { MouseEventHandler } from 'react';
 
 interface ItemProps {
   className?: string;
+  onClick?: MouseEventHandler;
 }
 
-export const Item: React.FC<ItemProps> = ({ children, className }) => {
+export const Item: React.FC<ItemProps> = ({ children, className, onClick }) => {
   return (
-    <div className={className}>
+    <button className={className} onClick={onClick}>
       { children }
-    </div>
+    </button>
   )
 }

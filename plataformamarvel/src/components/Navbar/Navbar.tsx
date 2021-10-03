@@ -8,6 +8,7 @@ import { Span } from '../../components/Span/Span';
 import { Text } from '../../components/Text/Text';
 
 import '../../styles/pages/navbar.css';
+import { DropDown } from '../DropDown/DropDown';
 
 class NavBar extends Component {
   render() {
@@ -32,6 +33,19 @@ class NavBar extends Component {
           <Text>
             <Link to="/"><Span>Sair</Span></Link>
           </Text>
+        </div>
+
+        <div className="navbarMobile">
+          <DropDown>
+            <DropDown.Toggle><img src={picture} alt="Foto" /></DropDown.Toggle>
+
+            <DropDown.List>
+              <DropDown.Item><Link to="/home"><Span>Personagens</Span></Link></DropDown.Item>
+              <DropDown.Item><Link to="/movies"><Span>Filmes</Span></Link></DropDown.Item>
+              <DropDown.Item><Link to="/hq"><Span>HQs</Span></Link></DropDown.Item>
+              <DropDown.Item><Link to="/"><Span>Sair</Span></Link></DropDown.Item>
+            </DropDown.List>
+          </DropDown>
         </div>
       </div>
     );

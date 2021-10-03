@@ -14,9 +14,35 @@ img {
   background: none;
 }
 
+.buttonStyle {
+  border-style: none;
+  background: none;
+}
+
+.selected {
+  display: block;
+  border-style: none;
+  background: none;
+}
+
+.disable {
+  display: none;
+}
+
+#show {
+  display: block;
+  border-style: none;
+  background: none;
+}
+
+#hide {
+  display: none;
+}
+
 @media screen and (max-width: 660px) {
   .images {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 }

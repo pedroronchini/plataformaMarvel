@@ -17,3 +17,22 @@
   flex-direction: row;
   padding: 20px;
 }
+
+.navbarMobile {
+  display: none;
+}
+
+@media screen and (max-width: 660px) {
+  .links {
+    display: none;
+  }
+
+  .navbarMobile {
+    display: block;
+  }
+
+
+  .logo {
+    width: 50%;
+  }
+}

@@ -5,6 +5,7 @@
   padding: 50px;
 }
 
+
 img {
   margin: 15px;
 }
@@ -24,6 +25,40 @@ img {
   border-radius: 10px;
   color: #FF0000;
   padding: 10px;
+}
+
+.dropDownButton {
+  color: #FF0000;
+  border-style: none;
+  background: none;
+}
+
+#selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  border-style: none;
+  background: none;
+}
+
+#disable {
+  display: none;
+}
+
+.show {
+  display: block;
+  border-style: none;
+  background: none;
+}
+
+.hide {
+  display: none;
+}
+
+.buttonStyle {
+  border-style: none;
+  background: none;
 }
 
 @media screen and (max-width: 660px) {

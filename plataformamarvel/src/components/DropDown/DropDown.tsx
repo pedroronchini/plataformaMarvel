@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { MouseEventHandler, useState } from 'react';
 
 import { List } from './partials/List';
 import { Item } from './partials/Item';
@@ -7,13 +7,14 @@ import { DropDownContext } from './DropDownContext';
 
 interface DropDownProps {
   className?: string;
+  onClick?: MouseEventHandler;
 }
 
 export const DropDown: React.FC<DropDownProps> & {
   Toggle: typeof Toggle,
   List: typeof List,
   Item: typeof Item,
-} = ({ children, className }) => {
+} = ({ children, className}) => {
   const [isShown, setIsShown] = useState(false);
 
   return (
