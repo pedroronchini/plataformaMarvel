@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 import Navbar from '../components/Navbar/Navbar';
-import { Disable } from '../components/Disable/Disable';
 import { DropDown } from '../components/DropDown/DropDown';
 
 import ironMan from '../assets/Homem-de-ferro-1.png';

@@ -7,8 +7,8 @@ interface ItemProps {
 
 export const Item: React.FC<ItemProps> = ({ children, className, onClick }) => {
   return (
-    <button className={className} onClick={onClick}>
+    <div className={className} onClick={onClick}>
       { children }
-    </button>
+    </div>
   )
 }

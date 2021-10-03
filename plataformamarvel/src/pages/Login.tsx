@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { ChangeEvent, FormEvent, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '../assets/Componente.png';
@@ -20,7 +20,17 @@ function Login() {
   function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
     const { name, value } = event.target;
 
+    
     setFormData({ ...formData, [name]: value});
+  }
+
+  const handleSubmit = (event: FormEvent) => {
+    event.preventDefault()
+    
+    const { user, password } = formData;
+
+    localStorage.setItem('@plataformaMarvel', user);
+    localStorage.setItem('@plataformaMarvel', password);
   }
 
   return (
@@ -33,8 +43,8 @@ function Login() {
         <Title>Bem-vindo(a) de volta!</Title>
         <span className="subtitle">Acesse sua conta:</span>
         
-        <input type="text" className="input" placeholder="Usuário" onChange={handleInputChange} />
-        <input type="password" className="input" placeholder="Senha" onChange={handleInputChange} />
+        <input type="text" name="user" className="input" placeholder="Usuário" onChange={handleInputChange} />
+        <input type="password" name="password" className="input" placeholder="Senha" onChange={handleInputChange} />
         
         <div className="containerRadio">
           <input type="radio" name="radio" className="radio" />
@@ -42,7 +52,7 @@ function Login() {
         </div>
         
         <Link to='#' className="textButtonPassword">Esqueci a senha</Link>
-        <Link to="/home" ><button className="button" >Entrar</button></Link>
+        <Link to="/home" ><button className="button" onSubmit={handleSubmit} >Entrar</button></Link>
         
         <Span className="text">Ainda não tem o login?
          <Link to="#" className="textButtonRegister">Cadastre-se</Link>
